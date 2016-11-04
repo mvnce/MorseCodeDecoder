@@ -10,6 +10,11 @@ namespace MorseCode
     {
         static void Main(string[] args)
         {
+            MorseCodeDecoder decoder = new MorseCodeDecoder();
+            Console.WriteLine("Decoder");
+            //List<String> ret = decoder.decode(".");
+            List<String> ret = decoder.decode(".-");
+            Console.WriteLine(String.Join(" ", ret));
         }
     }
 }
